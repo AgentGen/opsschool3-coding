@@ -15,7 +15,8 @@ for i in buckets:
                 del ppl[k]
         if a <= (len(buckets) - 1):
             a += 1
-print('Age range', buckets[a-1], "to", file=open("names.yson", "a"))
+z = sorted(ppl.items(), key=lambda p: p[1], reverse=True)[0]
+print('Age range', buckets[a-1], "to", z[1])
 for k, v in sorted(ppl.items(), key=lambda p: p[1], reverse=False):
         print(k, file=open("names.yson", "a"))
         del ppl[k]
