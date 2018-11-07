@@ -13,4 +13,3 @@ weather = weather.get('description')
 temp = data2.get('main')
 temp = temp.get('temp')
 print('Current weather in ', city, ' ,', country, ':', weather, '\n', 'And the temperature is', temp, 'Degrees celsius')
-
