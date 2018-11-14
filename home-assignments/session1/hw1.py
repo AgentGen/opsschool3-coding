@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import json
 fo = open("names.yson", "wb")
 with open('names.json') as json_data:
